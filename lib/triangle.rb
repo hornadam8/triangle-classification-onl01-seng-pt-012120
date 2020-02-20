@@ -14,14 +14,11 @@ class Triangle
         rescue TriangleError => error
         puts error.message
       end
-    end
     elsif @a == @b == @c
       :equilateral
-    end
-    elsif @a == @b && @a != @c || @b == @c && @b != @a || @c == @a != @b
+    elsif @a == @b && @a != @c || @b == @c && @b != @a || @c == @a && @c != @b
       :isosceles
-    end
-    elsif @a != @b != @c
+    elsif @a != @b && @b != @c && @c != @a
       :scalene
     end
   end
