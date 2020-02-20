@@ -10,8 +10,6 @@ class Triangle
     if @a+@b<@c || @b+@c<@a || @c+@a<@b || @a <= 0 || @b <= 0 || @c <= 0  
       begin
         raise TriangleError
-        rescue TriangleError => error
-        puts error.message
       end
     elsif @a == @b && @b == @c
       :equilateral
