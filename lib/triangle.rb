@@ -8,9 +8,14 @@ class Triangle
   end
   
   def kind
+    
   end
   
   class TriangleError < StandardError
+    def message
+      "Not a triangle, stoopid"
+    end
+  end
     
   
 end
