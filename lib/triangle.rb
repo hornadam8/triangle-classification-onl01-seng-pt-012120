@@ -6,9 +6,8 @@ class Triangle
     @b = b
     @c = c
   end
-  
   def kind
-    if @a + @b < @c || @b + @c < @a || @c + @a < @b
+    if @a+@b<@c || @b+@c<@a || @c+@a<@b || @a<0 || @b<0  
       begin
         raise TriangleError
         rescue TriangleError => error
